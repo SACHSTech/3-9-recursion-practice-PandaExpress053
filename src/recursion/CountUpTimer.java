@@ -2,7 +2,12 @@ package recursion;
 
 public class CountUpTimer {
     public static void countUp(int n) {
-        // solution here
+        
+        if (n == 0){
+            return;
+        }
+        countUp(n-1);
+        System.out.println(n);
     }
 
     public static void main(String[] args) {
